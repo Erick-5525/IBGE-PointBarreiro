@@ -1,0 +1,144 @@
+.menu-ibge {
+  padding: 15px 20px;
+  background-color: #fff;
+  border-bottom: 2px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.select-uf {
+  padding: 8px 30px 8px 12px; 
+  border-radius: 6px;
+  border: 2px solid #005ea2; 
+  background-color: #fff;
+  color: #005ea2;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23005ea2' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 14px;
+
+  transition: all 0.2s ease;
+}
+
+.select-uf:hover {
+  background-color: #f0f7ff;
+  border-color: #004a80;
+}
+
+.select-uf:focus {
+  box-shadow: 0 0 0 3px rgba(0, 94, 162, 0.2);
+}
+
+.select-uf option {
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  font-size: 16px; 
+}
+
+.menu-select-container label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #005ea2;
+}
+
+
+@media (max-width: 600px) {
+  .select-uf {
+    flex: 2; 
+    max-width: none;
+    height: 45px; 
+  }
+}
+
+.menu-links {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-menu {
+  padding: 8px 16px;
+  border: 1px solid #005ea2;
+  background-color: transparent;
+  color: #005ea2;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-menu:hover {
+  background-color: #005ea2;
+  color: #fff;
+}
+
+.menu-select-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-left: 2px solid #eee;
+  padding-left: 20px;
+}
+
+.menu-select-container label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+}
+
+.select-uf {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.loader-texto {
+  font-size: 12px;
+  color: #888;
+}
+
+@media (max-width: 600px) {
+  .menu-ibge {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .menu-links {
+    justify-content: space-between;
+  }
+
+  .btn-menu {
+    flex: 1;
+    padding: 12px 5px;
+    font-size: 13px;
+  }
+
+  .menu-select-container {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    justify-content: space-between;
+  }
+
+  .select-uf {
+    flex: 1;
+    max-width: 150px;
+  }
+}
