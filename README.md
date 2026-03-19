@@ -45,6 +45,8 @@ Aplicação web interativa desenvolvida com **React** para consulta de dados geo
 
 ---
 
+Acesse no navegador: (https://ibgepointbarreiro.netlify.app)
+
 ## ▶️ Como Executar o Projeto
 
 ```bash
